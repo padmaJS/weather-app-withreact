@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-
+import Input from "./input.jsx";
 class WeatherAPI extends Component {
   render(){
     return(
-      <h1>hi</h1> 
+      <Input />
+      <h1>hi2</h1> 
     );
   }
 }
