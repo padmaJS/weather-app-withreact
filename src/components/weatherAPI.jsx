@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class WeatherAPI extends Component {
   render(){
     return(
-      <h1>hi</h1>
+      <h1>hi</h1> 
     );
   }
 }
