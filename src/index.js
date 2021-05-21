@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import WeatherAPI from "./components/weatherAPI.jsx";
+import AllComponents from "./components/allcomponents.jsx";
 
-ReactDOM.render(<WeatherAPI />, document.getElementById("root"));
+ReactDOM.render(<AllComponents />, document.getElementById("root"));
