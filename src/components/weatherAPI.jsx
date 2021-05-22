@@ -13,10 +13,14 @@ class WeatherAPI extends Component {
       })
   }
   render(){
-    return(
-      let {dataLoaded, items} = this.state;
-      <p>{items}{dataLoaded}Hi</p> 
-    );
+    let {dataLoaded, items} = this.state;
+    if(!dataLoaded){
+      return <div>Loading...</div>
+    }else{
+      return(
+        <p>{items}{dataLoaded && "fu"}Hi</p> 
+      );
+    }
   }
 }
 export default WeatherAPI;
