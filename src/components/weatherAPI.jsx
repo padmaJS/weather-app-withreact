@@ -18,7 +18,7 @@ class WeatherAPI extends Component {
       return <div>Loading...</div>
     }else{
       return(
-        <p>{items}{dataLoaded && "fu"}Hi</p> 
+        <p>{items}Hi</p> 
       );
     }
   }
