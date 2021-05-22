@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 
 class WeatherAPI extends Component {
-  state = {
-    dataLoaded : false,
-    items : null
+  constructor(props){
+    super(props);
+    this.state = {
+      dataLoaded : false,
+      items : null
+    }
   }
   weatherDataGetter(){
     fetch('http://api.openweathermap.org/data/2.5/forecast?q=London&appid=f4a0eee4b5e6bc6d8cbb956e511528de&units=metric')
