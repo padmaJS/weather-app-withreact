@@ -15,7 +15,7 @@ class WeatherAPI extends Component {
   render(){
     let {dataLoaded, items} = this.state;
     if(!dataLoaded){
-      return <div>Loading...</div>
+      return <div>Loading...{ items == null && "fuck"}</div>
     }else{
       return(
         <p>{items}Hi</p> 
