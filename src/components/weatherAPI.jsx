@@ -6,7 +6,7 @@ class WeatherAPI extends Component {
     items : null
   }
   weatherDataGetter(){
-    fetch('http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=f4a0eee4b5e6bc6d8cbb956e511528de&units=metric')
+    fetch('http://api.openweathermap.org/data/2.5/forecast?q=London&appid=f4a0eee4b5e6bc6d8cbb956e511528de&units=metric')
       .then(response => response.json())
       .then(json => {
         this.setState({ dataLoaded : true, items : json})
