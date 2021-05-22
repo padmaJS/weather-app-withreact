@@ -4,14 +4,14 @@ class Input extends Component{
   state = {
     cityName : null,
   }
-  setCityName = () => {
-    this.setState({cityName : document.getElementById('city')})
+  setCityName = (e) => {
+    this.setState({cityName : e.target.value})
   }
   render(){
     return(
       <div>
-        <input placeholder='Enter your city' id='city'></input>
-        <button onClick={ this.setCityName() }>Search</button>
+        <input placeholder='Enter your city' id='city' onChange={this.setCityName}></input>
+        <p>{this.state.cityName}</p>
       </div>
     )
   }
