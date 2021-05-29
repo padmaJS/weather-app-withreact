@@ -5,7 +5,8 @@ class WeatherAPI extends Component {
     super(props);
     this.state = {
       dataLoaded : false,
-      items : null
+      items : null,
+      cityName : this.props.city
     }
   }
   componentDidMount(){
@@ -18,7 +19,7 @@ class WeatherAPI extends Component {
   render() {
     let { dataLoaded, items } = this.state;
     if (!dataLoaded) {
-      return <div>Loading...{items == null && "fuck"}</div>
+      return <div>Loading...{items == null && "fuck"}{this.state.cityName}</div>
     } else {
       return (
         <div>
