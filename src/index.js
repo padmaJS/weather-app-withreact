@@ -1,4 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Input from "./components/input"
-ReactDOM.render(<Input />, document.getElementById("root"));
+import API from "./components/API.jsx";
+
+ReactDOM.render(<API />, document.getElementById("root"));
+
