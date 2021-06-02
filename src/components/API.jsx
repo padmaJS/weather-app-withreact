@@ -35,8 +35,9 @@ class API extends Component{
       <div>
         <input placeholder='Enter your city' id='city' onChange={this.setCityName}></input>
         <button onClick = {this.weatherDataGetter}>Search...</button>
-        <p>{this.state.dataLoaded && this.state.items.name}</p>
+        <p>{this.state.dataLoaded && this.state.items.name},{this.state.dataLoaded && this.state.items.sys.country}</p>
         <p>{this.state.dataLoaded && this.state.items.main.temp}</p>
+        <p>{this.state.dataLoaded && this.state.items.weather[0].main}</p>
       </div>
     )
   }
