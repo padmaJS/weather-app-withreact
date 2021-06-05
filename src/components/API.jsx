@@ -10,7 +10,7 @@ class API extends Component{
     this.setState({cityName : e.target.value})
   }
   weatherDataGetter = () =>{
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.cityName}&appid=f4a0eee4b5e6bc6d8cbb956e511528de&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.cityName}&appid=f4a0eee4b5e6bc6d8cbb956e511528de&units=metric`)
       .then(response => response.json())
       .then(json => {
         this.setState({ cityName: '', dataLoaded : true, items : json})
