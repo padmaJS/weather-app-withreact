@@ -8,7 +8,7 @@
 This is a simple weather app that accepts desired location as per the user to search for the weather with temperature of that location. This is one my very first projects which I did in order to learn more about programming in ReactJS. 
 ## Installation
 
-    npm create-react-app weather-app
+    npx create-react-app weather-app
     cd weather-app
     npm start
 Then just copy this repository and overwrite the files.
